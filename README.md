@@ -44,38 +44,48 @@ You can enter the enter command inside the type into box
 
 
 3) You can use [Comment Out activity](https://docs.uipath.com/activities/other/latest/workflow/comment-out) using (ctrl+D) To deactivate some unwanted activities.
+
+   
 4) Extract Table Data: In order to get all the information and arrange it in rows and columns
+
+   
    ![image](https://github.com/user-attachments/assets/43f6f080-271e-4589-aafe-366f62834d7c)
 
 Name the headers and make a select on the desired information
-   ![Screenshot (852)](https://github.com/user-attachments/assets/1f8744ab-1cf0-46f8-ba4b-22314502901f)
+
+
+   <img src="https://github.com/user-attachments/assets/1f8744ab-1cf0-46f8-ba4b-22314502901f" width="450">
+  
 
 Through the settings, you can determine the number of rows and columns and determine the quality of variables.
 
-5) Use Fiter Date
+6) Use Fiter Date
    To filter the data and call the created variable in Extract Table Data
+   
+   <img src="https://github.com/user-attachments/assets/e87c697f-3f07-457d-b1fe-d4e6163615ea" width="450">
+     
 
-   ![image](https://github.com/user-attachments/assets/e87c697f-3f07-457d-b1fe-d4e6163615ea)
-
- 6) To make sure the number of rows
+ 7) To make sure the number of rows
     dt_Datas.RowCount.ToString in Write line box.
 
- 7) To store filtered data in a new sheet use Write Range Workbook
+ 8) To store filtered data in a new sheet use Write Range Workbook
 
- 8) Excel Process Scope> Use Excel File> Delete Sheet (to get the updated sheet)>Write DataTable to Excel>Insert Column
+ 9) Excel Process Scope> Use Excel File> Delete Sheet (to get the updated sheet)>Write DataTable to Excel>Insert Column
     
-    ![image](https://github.com/user-attachments/assets/8ff56765-21f4-4914-9ead-d3caef3cecb2)
-
- 9) For Each Excel Row> Write Cell
+    <img src="https://github.com/user-attachments/assets/8ff56765-21f4-4914-9ead-d3caef3cecb2" width="400">
      
-     ![image](https://github.com/user-attachments/assets/71eb54e6-666a-40de-80d1-c91b208b86f4)
 
 
-
-
-
+ 10) For Each Excel Row> Write Cell
+     
+    <img src="https://github.com/user-attachments/assets/71eb54e6-666a-40de-80d1-c91b208b86f4" width="400">
+   
 
 # Results
+
+To watch the robot run and the results, [click here](https://drive.google.com/file/d/1RoOtBthqJDEtbsbQDnaWWhmtqDQNrfJY/view?usp=drive_link)
+
+
 # CONCLUSION
 1) You can speed up the process by changing the [input mode](https://docs.uipath.com/studio/standalone/2023.4/user-guide/input-methods) Through the  Properties Panel:(Simulate, Chromium API, SendWindowMessages, Hardware Events, Background)
 2) The difference between ancher and target is to match the exact label.
