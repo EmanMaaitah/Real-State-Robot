@@ -1,0 +1,374 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,6038" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="706,5272" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Amman" Name="strCityName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="706,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter your city Name" Title="Your Governorate">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[strCityName]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: OpenSooq Jordan : Cars : Property : For Sale : Services : Jobs" sap:VirtualizedContainerService.HintSize="706,4974" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="672,4733" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_details" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_filtered" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_ff" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_Datas" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_FilterdDATA" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="638,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Text="[&quot;apartments for rent in &quot; + strCityName + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en" CvElementArea="79, 295, 939, 52" CvTextArea="92, 310, 151, 18" CvTextArgument="Search in OpenSooq" CvType="InputBox" DesignTimeRectangle="83, 295, 932, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT search'" FullSelectorArgument="&lt;webctrl id='search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search' tag='INPUT' type='text' class='sc-fb2f5503-1 dsJOvk width-100' aaname='' /&gt;" Guid="ce1fbf9e-c200-4524-8e6d-c4800fbf7ce8" ImageBase64="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" InformativeScreenshot="459b90863e10fa1ae50d0623cde8c32b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OpenSooq Jordan : Cars : Property : For Sale : Services : Jobs' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Price'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="638,251" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Text="200" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvElementArea="98, 536, 133, 53" CvTextArea="108, 552, 38, 15" CvTextArgument="From" CvType="InputBox" DesignTimeRectangle="101, 539, 121, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='4' parentid='right_bar_section' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' parentid='right_bar_section' tag='INPUT' class='height-100 width-100 ps-8' aaname='' /&gt;" Guid="19a77788-6d51-4083-aa8f-2ae6e83d6b83" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAA0CAYAAACn1zeBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVHhe7dzNboJAFIbh3qVN74V4JcTbUC+jcelCNibMxiVh4ynnACM/YyKpTut835tMGgHZPAxgmsyHMLiC6FVViXNOiqKQ4/HIkdBQ0xm6Yp9OJ7lcLlLXtVyv124Pe/fUUk1H6OfzWcqyJHTieXSd4QrO0s/Q9Rmut3TOcIwMXWe5PsMZRoaub3T6gGcYGbq+yvPWjpNHZzgRHTCiA0Z0wIgOGNEBIzpgRAfscXS3l+zzS1Z3RrZ13YHsv7cYPf/uPrO3jeiAPR293K5lle9ll3W3/vzQ7TlIrp/92DRbbtn3sr0c9K8/Zi275qlh+/ptzTH8r//veg16c9zoGd+/D/gLoLkEckW8wXvY0EUy3TY4D1vei9DHs9iAZzO0BewvjvZ77czum14YWvhcbEmL0f1tdjgGM8/wRiiuvdUHZucQMHSxzM9F9Gf0mpkeQA/9pCP63xQN/e5M77YTPV4R0O9BhZ7pRI9RFHT/PjCY7YY3QCZ6vOKgW5Pf6ZNjiB6vx9FZMhEdMKIDRnTAiA4Y0QEjOmBEB4zogBEdMKIDRnTAiA4Y0QHz6Fx+BCdD50JDWBk6lxTDytC5eCBWhq5xmVCcPLrGBYExGqFrXPo73dRytvR3Hxf5T3cEF/lnqSfyA9R73X11xdrSAAAAAElFTkSuQmCC" InformativeScreenshot="6aa6aa9c6d9bb59e530084ad3661f452.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Price" CvType="Text" DesignTimeRectangle="100, 490, 54, 31" ElementType="Text" FriendlyName="'Price'" FullSelectorArgument="&lt;webctrl class='font-22' tag='H3' innertext='Price' /&gt;" FuzzySelectorArgument="&lt;webctrl class='font-22' tag='H3' innertext='Price' type='' aaname='Price' check:text='Price' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAjCAYAAADFYhl7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVGhD7Ze/a9tAFMf1Z9xqyGLoEG3RGIEXQ4cavBQ6GE8lo8lgvBmRSXTKKDoElKHgDAV3KMijMhSczUtAGTJoyKAhg4YM356sJ/lk/bJNqFJFHzhIHndP9zk93Z0lvBMa0brRiNaN9yjqwuxLkKS8xtA+VTGczrDyaMge2NNNrt61S9F/xx6iQjvRYD/TsB35P0V5Y1/n2OfFvlHRHsxHCkc8O7AuumA0WUk6w/yAEq6K3UXXODA6GX0eTfSiBZjacH6O0D0K/uff9Ud9XeZlb9T7Y0IbKGhRH/aheD9wFzqGp21a+BaU/hkuF/mV8vqiJwqU6O+gDWbrEs8X9bH8JlbKVkvtBx6ssZLdly+semHzjGl2FvW97dIdwYoyiqK8yedzuC88/uLBfQo75Yn6txpkirMvBr1BH87V5/hZbGzFk3d/bOLKOHqOi3kszzBZpFUP3oxkXqJxuoRoF8Y9xQWyRT3MBlFc3RonVk+0HyyhH1OMTTYLHeBbGFH+qIpEDhJl/LtbiuWUEOWlRmGRbFEbk5JxCcTn9E0+YxFx/kK1EbuLHilQO0NoN6v0sSJO4JPJ30WaTNEdxiXgZR7lKG7pT2/PzSiHwpUOKRXtGK8r+kBjiGpFE6U7KS/dh/Ln5FGxqLgZydDvKEzYUxaPGf0OPrqCzejegEp9s+ZQsWjyeAnOTOspjHt3l5ucx3yjIinnezfOsz5egnhwvJzLFGe0KEkqFw3OzMILA1Oh3YoTd3gVtLL78qaIx57AGxANCa+AKtos7BNeAU3YWcl4ya9uNOEKGPyEHEL/5WRKBgii9aYRrRuNaN1oROtGI1o3GtG60YjWC+AvMPLmp/QL3qEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Price'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="638,251" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Text="500[k(Enter)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvElementArea="257, 536, 134, 53" CvTextArea="267, 552, 18, 15" CvTextArgument="To" CvType="InputBox" DesignTimeRectangle="260, 539, 121, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='5' parentid='right_bar_section' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' parentid='right_bar_section' tag='INPUT' class='height-100 width-100 ps-8' aaname='' /&gt;" Guid="ca544298-045f-46c5-813a-e8c25557c8df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAA0CAYAAACn1zeBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF3SURBVHhe7dw9bgIxFEXh7DJR9oJYCWIbkGUgSgqmGWncUKJp5oVnzEjAJIqQFYzv+SQX/HSHNzaN3wxyJqMfj0cLIVjTNLbb7ViVrbvoHnu/39vhcLC+720YhvQJauA9r6K3bWtd1xG6cmN0n3APjvrF6L6H+yOdCdcQo/uU+x4ODTG6n9L90AYNMbof43m06xijQwfRBRFdENEFEV0Q0QURXRDRBf05+nbxae8fv6/ZKqRvo2QPTnqw9ewUerFNr/FKiC4oe/RuNeeRX7is0c/7/tzWl87hy2aEL06+6CnwYpNeJ+fJXxobQTnyRd8sr6f84ocfA54nc/SJiSZ6cf5p0ifex9OwpwvKF/2E0/tryBrd3f5PZy8vz4PR8cqILojogoguiOiCiC6I6IKILojogoguiOiCiC6I6IKILmiMzvUjOmJ0LhrSEqNzpZiWGJ3LA7XE6I5rQnWM0R0XAmu4iu64+rtu3vMuuuOS/7rXZHTUzOwbf4lT6hSxpyMAAAAASUVORK5CYII=" InformativeScreenshot="1d078714cf5908c42574ec87b05cc63e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Price" CvType="Text" DesignTimeRectangle="100, 490, 54, 31" ElementType="Text" FriendlyName="'Price'" FullSelectorArgument="&lt;webctrl class='font-22' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl class='font-22' tag='H3' type='' aaname='Price' check:innerText='Price' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAjCAYAAADFYhl7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ8SURBVGhD7Ze/a9tAFMf1Z9xqyGLoEG3RGIEXQ4cavBQ6GE8lo8lgvBmRSXTKKDoElKHgDAV3KMijMhSczUtAGTJoyKAhg4YM356sJ/lk/bJNqFJFHzhIHndP9zk93Z0lvBMa0brRiNaN9yjqwuxLkKS8xtA+VTGczrDyaMge2NNNrt61S9F/xx6iQjvRYD/TsB35P0V5Y1/n2OfFvlHRHsxHCkc8O7AuumA0WUk6w/yAEq6K3UXXODA6GX0eTfSiBZjacH6O0D0K/uff9Ud9XeZlb9T7Y0IbKGhRH/aheD9wFzqGp21a+BaU/hkuF/mV8vqiJwqU6O+gDWbrEs8X9bH8JlbKVkvtBx6ssZLdly+semHzjGl2FvW97dIdwYoyiqK8yedzuC88/uLBfQo75Yn6txpkirMvBr1BH87V5/hZbGzFk3d/bOLKOHqOi3kszzBZpFUP3oxkXqJxuoRoF8Y9xQWyRT3MBlFc3RonVk+0HyyhH1OMTTYLHeBbGFH+qIpEDhJl/LtbiuWUEOWlRmGRbFEbk5JxCcTn9E0+YxFx/kK1EbuLHilQO0NoN6v0sSJO4JPJ30WaTNEdxiXgZR7lKG7pT2/PzSiHwpUOKRXtGK8r+kBjiGpFE6U7KS/dh/Ln5FGxqLgZydDvKEzYUxaPGf0OPrqCzejegEp9s+ZQsWjyeAnOTOspjHt3l5ucx3yjIinnezfOsz5egnhwvJzLFGe0KEkqFw3OzMILA1Oh3YoTd3gVtLL78qaIx57AGxANCa+AKtos7BNeAU3YWcl4ya9uNOEKGPyEHEL/5WRKBgii9aYRrRuNaN1oROtGI1o3GtG60YjWC+AvMPLmp/QL3qEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="638,732" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,621" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Listings with Photos'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V3">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvType="CheckBox" DesignTimeRectangle="108, 316, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='checkbox-PostSearch[withImages]' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='checkbox-PostSearch[withImages]' tag='INPUT' type='checkbox' class='sc-87c8a79d-0 zbXRT checkboxStyle relative pointer inline vMiddle' aaname='' /&gt;" Guid="0091a5d5-f139-42f5-8b0a-aada223683ef" InformativeScreenshot="0b205e1f5743891071d7ae7313c0d5e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/1082751/ListingPage_vertical' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArgument="Listings with Photos" CvType="Text" DesignTimeRectangle="136, 314, 150, 26" ElementType="Text" FriendlyName="'Listings with Photos'" FullSelectorArgument="&lt;webctrl class='ms-8' parentid='right_bar_section' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ms-8' parentid='right_bar_section' tag='SPAN' type='' aaname='Listings with Photos ' check:innerText='Listings with Photos' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAeCAYAAADU3gfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMzSURBVHhe7ZhtjqMwDEA5I1IvVHGVzlE6B5kfPUaWxE7i2A6QksmWkZ+EdqHB8ccrdHdyhjEAE80YgolmDMFEM4ZgohlDMNGMIZhoxhCyaD8PN0+Tm79eeEHj5R63yU33J54fwd8zu8cPnr4V47N4fc1umhaXKvC9uz3WyiJPt+z2UgN7s96rHsUeSh5nEDX0pVG0N/he1mZQ0f4ezzuX4KRo6sAhJhWrp2iyhr6YaB0YI9pK6OXklm84/cOiKa89LD4fWSpoBPks3Mdj5KGEYtN6pYGYY1wzfz2b8pHgU6J4jcfXV7k/HWr+e1ybD5Ag1oT5pc/3pNgRjc0o5cFqljOs5enZ+izuQT4veuWR98s1Z0Vj3zAPHUggrNn6jRZfCTQOXqMNx71yfqTAlnwY4pucZK7nzGPWnmhlLhhj86mxs4bVlyRQ+tTWS60GvFb0gcfS8oU13KNTou0NMRCKOiBaOgfK2JUBRCla8uHw/Pz5bXHLul/qBe5TDviAaJs1aWyJJoWBeLS3nnLQtT1Boo0aWM2JQmRdKo1zT7Q46K37DorG7y8bVCsIm9+Sj6CMHRq+xot/BkINeShHRdNr4mJQsDdYgzhSzwBdorInMjeEzUWsE3OLKP0K+fE8Ss7/RlOaU8Q4JRreV83tjXwUslRwb/i2Erny58Cvi6aJobAv2ka8HdHquSq1hVjr/emQ0nUQrSQanuL0EK2yJl5vykchDSz0APdMf4c96CuED/hzRdNyQ3ZEk3OL1GaBoEc8r+6i8UL7iFYZQCyqJR8NlGq5r3umPWDP+SaHeSXRanvCF3CjhpoP+PQSv90I2p4d/jHAiuCJYNyc2DuirWDcvA7jkGuH8lHJsaiQMIzymgf2yUPi54drEvQXLZ3TmKKXeiyon+bLY/G9PHoNQrTQWOWAQXFJYoLa2ggZYticx2gYCssx/j+VbFhe449tyYB4X7G2IqkYCskLcmmoqeA3RPOQGYRDyUHUAPB+8prSfvRQ8s+iXRIo8ohIxv/lIqLp33T+O8P4XC70RDv2iDY+k4u/Oo2rYKIZQzDRjCGYaMYQTDRjCCaaMQQTzRiCiWYMwLl/fcSdCn5Tvo0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Listings with Price'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NCheck_4" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V3">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvType="CheckBox" DesignTimeRectangle="108, 354, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='checkbox-PostSearch[onlyHasPrice]' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='checkbox-PostSearch[onlyHasPrice]' tag='INPUT' type='checkbox' class='sc-87c8a79d-0 zbXRT checkboxStyle relative pointer inline vMiddle' aaname='' /&gt;" Guid="2df824e7-d0cb-4e78-9e38-309e36eeac19" InformativeScreenshot="7aa8d7081442554afa6ff640d9292a55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/1082751/ListingPage_vertical' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArgument="Listings with Price" CvType="Text" DesignTimeRectangle="136, 351, 136, 26" ElementType="Text" FriendlyName="'Listings with Price'" FullSelectorArgument="&lt;webctrl aaname='Listings with Price ' class='ms-8' parentid='right_bar_section' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Listings with Price ' class='ms-8' parentid='right_bar_section' tag='SPAN' type='' check:innerText='Listings with Price' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAeCAYAAAD+bvZ2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALiSURBVHhe7ZhhbsMgDIVzxki9UJWrpEfpDrIfPQYj2IAxJsFJujWTPwmtScE82y+k2uAMQ4EZxlBhhjFUmGEMFWYYQ4UZxlBhhjFUZMN8z24cBjc+XnhD4uXm2+CG+xOve1jWjG7+xstdMT6L12N0wzC5lMFSu9vsM4s83bRZSwmsjV8rjmKPFnv37kNpmB18TT5Zapj/x/POm3nQMKIxIGZh1D/ADHMCv2MYT6jl4KYvvP4Djr+SMIk8sjng6CbfhXU8Ri5uKHyaLzxJqDHOGR9PlZ4afGqL12N8LZT709dQ/hzn5gHNjDmhvvT91umwYRjWo6DDz51T3ZZcJbNynUJNeN0aGo4ZRnB89X4Pc6hAFgOLW8bBe1Q07pX1kSJo9DCq0yGZsq2Zx2ydMKUWjNFoBLAxh+UHOrIugBumriWsy/nFOD1aDxlmqxmBXsMUSfPYjQRiczV6OFzfcn2b3OT3S7XAfcpGdRhmNSeJNcNsNx4oDSPvCfvAHFlryw/HTpjYsLV1nYbh68tE5TlVsj16KsrYofk+XvwbCDnkovcaRs6JN5iCtcEcqpFqBshmEPIRDYiE3MpTGeB9Ao7/hhGSLGIcMgyua2rboUcgmwPWhuIRkxTm8bzdMGsNJmwbpiMeGqY5itqeYpiSUDwa5wzDNObE+yo9AqnwoQbUpMtn2IM+gf/PMGuaSk43TNXEUwzTSBw1q/RIoDmmu98z7QF7jre6KdcxTGsO1SxrbeVwwo9eVgA84tITiXHzE7rHMB6Mm+dhHHKvS49IjkWNFU8nbjbehLopn2OYeF3EZDWBOGWNIPfaaJVhQoGEAcF4s/Nm9dwIaUYQzWMoiss0xv9z0LXbemSkorXMBnNJMYku0PJJhlkgPQhD0IC5ptHQkA1zSaA4PYYwzuEihpGfvNaxabyPC50w+C7uODaN93HxV5Lx25hhDBVmGEOFGcZQYYYxVJhhDBVmGEOFGcZQ4NwP3sOnWdY6SuYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NSelectItem DisplayName="Select Item 'Relevant'" sap:VirtualizedContainerService.HintSize="382,181" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Price : Descending" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Relevant</x:String>
+                        <x:String>Date: Newest</x:String>
+                        <x:String>Price : Descending</x:String>
+                        <x:String>Price : Ascending</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvTextArgument="Relevant" CvType="Text" DesignTimeRectangle="1075, 360, 208, 56" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Relevant'" FullSelectorArgument="&lt;webctrl aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-qiwgdb' aaname='Relevant' check:innerText='Relevant' /&gt;" Guid="01ba9f23-26cf-4e43-96d3-509161033926" InformativeScreenshot="0b5627b3e0dfc74de86a9a7223bd2cb4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/1082751/ListingPage_vertical' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Datas]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Num of rooms'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Phone Num'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='a' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='alt'&gt;&lt;webctrl tag='a' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="638,190" sap2010:WorkflowViewState.IdRef="NExtractData_4" InteractionMode="DebuggerApi" LimitExtractionTo="Rows" MaximumResults="30" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?search=true&amp;price_from=200&amp;price_to=500&amp;price_currency=10" DesignTimeRectangle="725, 398, 544, 52" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3 Bedrooms'" FullSelectorArgument="&lt;webctrl aaname='3 Bedrooms , 2 Bathrooms , Furnished , Yearly , Surface Area: 18*' parentid='serpMainContent' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3 Bedrooms , 2 Bathrooms , Furnished , Yearly , Surface Area: 18*' parentid='serpMainContent' tag='P' type='' class='' check:innerText='3 Bedrooms , 2 Bathrooms , Furnished , Yearly , Surface Area: 180 m2, Semi Ground Floor , 10 - 19' /&gt;" Guid="59970673-5ed1-4143-b9f2-1d0e3f3540f3" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='search: | OpenSooq' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?search=true&amp;price_from=200&amp;price_to=500&amp;price_currency=10" DesignTimeRectangle="423, -50, 860, 8840" DesignTimeScaleFactor="1" FriendlyName="'Clear Filters200'" FullSelectorArgument="&lt;webctrl id='serpMainContent' tag='DIV' /&gt;" Guid="d892169f-0a80-4fc4-84c0-07fb01b7085c" InformativeScreenshot="cd93f66db7a6b21b89afaaaf6fd1d2b3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='search: | OpenSooq' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="638,547" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,436" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_details]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Title'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Num of room'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Num room'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator='.' ThousandsSeparator=',' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='url Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="Rows" MaximumResults="20" ScopeIdentifier="53cba7a6-008e-47fd-a97f-13cc3b21ea72" Version="V3">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://jo.opensooq.com/en/find?term=apartments%20for%20rent%20in%20amman" CvType="Button" DesignTimeRectangle="1115, 217, 49, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'chrome.exe search:'" Guid="0a6c368b-2770-40b8-861c-e4baa3a84c58" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/1082751/ListingPage_vertical' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="423, 232, 860, 8144" DesignTimeScaleFactor="1" FriendlyName="'30160m2 2'" FullSelectorArgument="&lt;webctrl id='listing_posts' tag='DIV' /&gt;" Guid="9aaa012d-cff2-4f4a-bc98-5d441700501e" InformativeScreenshot="05ddc2b85e8b031e4cc13ddf6359cbcc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/1082751/ListingPage_vertical' title='search: apartments for rent in amman | OpenSooq' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:FilterDataTable DataTable="[dt_details]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="382,186" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[dt_ff]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable.Filters>
+                      <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                        <ui:FilterOperationArgument BooleanOperator="And" Operator="GT">
+                          <ui:FilterOperationArgument.Column>
+                            <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+                          </ui:FilterOperationArgument.Column>
+                          <ui:FilterOperationArgument.Operand>
+                            <InArgument x:TypeArguments="x:Int32">[700]</InArgument>
+                          </ui:FilterOperationArgument.Operand>
+                        </ui:FilterOperationArgument>
+                        <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+                          <ui:FilterOperationArgument.Column>
+                            <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+                          </ui:FilterOperationArgument.Column>
+                        </ui:FilterOperationArgument>
+                      </scg:List>
+                    </ui:FilterDataTable.Filters>
+                    <ui:FilterDataTable.SelectColumns>
+                      <scg:List x:TypeArguments="InArgument" Capacity="4">
+                        <x:Null />
+                      </scg:List>
+                    </ui:FilterDataTable.SelectColumns>
+                  </ui:FilterDataTable>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ui:FilterDataTable DataTable="[dt_Datas]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="638,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" OutputDataTable="[dt_FilterdDATA]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="GT">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:Int32">[400]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Price"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:WriteRange AddHeaders="True" DataTable="[dt_FilterdDATA]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="638,148" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="[strCityName]" StartingCell="A2" WorkbookPath="RealStates.xlsx" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="638,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[dt_Datas.RowCount.ToString]" />
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="638,1983" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_6" ShowExcelWindow="True">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1871" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="570,1811" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="Prices.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,1515" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:DeleteSheetX DisplayName="Delete Sheet" sap:VirtualizedContainerService.HintSize="502,123" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(strCityName.ToUpper)]" />
+                            <ueab:WriteRangeX Destination="[Excel.Sheet(strCityName.ToUpper)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="502,193" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="True" Source="[dt_FilterdDATA]" />
+                            <ueab:InsertColumnX DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,243" sap2010:WorkflowViewState.IdRef="InsertColumnX_1" NewColumnName="Num of bedrooms" Range="[Excel.Sheet(strCityName.ToUpper)]" RelativeColumnName="Num of rooms" RelativePosition="After">
+                              <ueab:InsertColumnX.ColumnFormat>
+                                <ueab:TextFormat />
+                              </ueab:InsertColumnX.ColumnFormat>
+                            </ueab:InsertColumnX>
+                            <ueab:InsertColumnX DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,243" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" NewColumnName="Num of bathrooms" Range="[Excel.Sheet(strCityName.ToUpper)]" RelativeColumnName="Num of rooms" RelativePosition="After">
+                              <ueab:InsertColumnX.ColumnFormat>
+                                <ueab:TextFormat />
+                              </ueab:InsertColumnX.ColumnFormat>
+                            </ueab:InsertColumnX>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="502,653" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(strCityName.ToUpper)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,437" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;Num of bedrooms&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentRow(&quot;Num of rooms&quot;).ToString.Split(&quot;,&quot;)(0)]" />
+                                    <ueab:WriteCellX Cell="[CurrentRow(&quot;Num of bathrooms&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[CurrentRow(&quot;Num of rooms&quot;).ToString.Split(&quot;,&quot;)(1)]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="7bf240a967b3a935a9dec4d5e00dd5aa.jpg" Selector="&lt;html app='chrome.exe' title='OpenSooq Jordan : Cars : Property : For Sale : Services : Jobs' /&gt;" Title="OpenSooq Jordan : Cars : Property : For Sale : Services : Jobs" Url="https://jo.opensooq.com/en" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
